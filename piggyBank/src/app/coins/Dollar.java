@@ -1,25 +1,25 @@
-package app;
+package app.coins;
 
-public class Quarter extends Coin
+public class Dollar extends Coin
 {
     private int quantity;
 
-    public Quarter()
+    public Dollar()
     {
-        super(0.25d);
+        super(1.00d);
         this.quantity = 1;
     }
 
-    public Quarter(int quantity)
+    public Dollar(int quantity)
     {
-        super(0.25d);
+        super(1.00d);
         this.quantity = quantity;
     }
 
     @Override
     public String toString()
     {
-        return quantity + " Quarter";
+        return  "$" + quantity;
     }
 
     @Override

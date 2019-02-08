@@ -1,25 +1,25 @@
-package app;
+package app.coins;
 
-public class Dollar extends Coin
+public class Dime extends Coin
 {
     private int quantity;
 
-    public Dollar()
+    public Dime()
     {
-        super(1.00d);
+        super(0.10d);
         this.quantity = 1;
     }
 
-    public Dollar(int quantity)
+    public Dime(int quantity)
     {
-        super(1.00d);
+        super(0.10d);
         this.quantity = quantity;
     }
 
     @Override
     public String toString()
     {
-        return  "$" + quantity;
+        return quantity + (quantity > 1 ? " Dime's" : " Dime");
     }
 
     @Override

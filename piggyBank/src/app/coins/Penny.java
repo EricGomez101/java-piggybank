@@ -1,25 +1,25 @@
-package app;
+package app.coins;
 
-public class Nickle extends Coin
+public class Penny extends Coin
 {
     private int quantity;
 
-    public Nickle()
+    public Penny()
     {
-        super(0.05d);
+        super(0.01d);
         this.quantity = 1;
     }
 
-    public Nickle(int quantity)
+    public Penny(int quantity)
     {
-        super(0.05d);
+        super(0.01d);
         this.quantity = quantity;
     }
 
     @Override
     public String toString()
     {
-        return quantity + (quantity > 1 ? " Nickle's" : " Nickle");
+        return quantity + (quantity > 1 ? " Penny's" : " Penny");
     }
 
     @Override

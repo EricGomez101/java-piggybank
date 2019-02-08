@@ -1,5 +1,7 @@
 package app;
 
+import app.coins.*;
+import app.bank.*;
 public class Main
 {
     public static void main(String[] args)
@@ -16,6 +18,15 @@ public class Main
         piggyBank.printCoins();
         System.out.println("");
         piggyBank.printValue();
+        System.out.println("\nFiltering by total value");
+        piggyBank.filter((e) -> 
+        {
+            double total = e.getTotal();
+            if (total >= 0.25d)
+            {
+                System.out.println(e);
+            }
+        });
 
     }
 }

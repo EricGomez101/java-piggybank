@@ -1,6 +1,7 @@
-package app;
+package app.bank;
 
 import java.util.ArrayList;
+import app.coins.Coin;
 
 public class PiggyBank
 {
@@ -28,4 +29,11 @@ public class PiggyBank
 
         System.out.println("The piggy bank holds $" + value);
     }
+
+    public void filter(Filter f)
+    {
+        list.forEach((e) -> f.filter(e));
+    }
+
+
 }
